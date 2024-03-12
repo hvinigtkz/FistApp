@@ -1,3 +1,12 @@
 <resources>
+    <string name="app_name">First App</string>
     <string name="Ola">Olá Vinicius Henrique</string>
+    <string name="botao">sou um botao</string>
+    <string name="telefone">Telefone:</string>
+    <string name="Email">Digite seu Email</string>
+    <string name="Gmail">Email</string>
+    <string name="numero">Digite seu Número</string>
+    <string name="botao2">Enviar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
