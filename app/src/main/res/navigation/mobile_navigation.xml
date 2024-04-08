@@ -11,7 +11,7 @@
         tools:layout="@layout/fragment_verifica" />
     <fragment
         android:id="@+id/calculoFragment2"
-        android:name="com.vinicius.fistapp.view.CalculoFragment"
+        android:name="com.vinicius.fistapp.view.PessoaFragment"
         android:label="fragment_calculo"
         tools:layout="@layout/fragment_calculo" />
     <fragment
