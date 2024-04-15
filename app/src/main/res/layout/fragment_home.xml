@@ -8,11 +8,11 @@
     android:padding="10dp">
 
     <Button
-        android:id="@+id/btnCalculo"
+        android:id="@+id/btnCadastroPessoa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#E30707"
-        android:text="Calcular Idade"/>
+        android:text="Cadastro de Pessoa"/>
 
     <Button
         android:id="@+id/btnVerifica"

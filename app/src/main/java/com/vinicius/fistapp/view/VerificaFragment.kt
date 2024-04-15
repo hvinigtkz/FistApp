@@ -41,8 +41,6 @@ class VerificaFragment : Fragment() {
                 binding.tvTelefone.text = "Telefone: ${telefone}"
             }
         }
-        binding.btnVoltar.setOnClickListener{
-            findNavController().navigate(R.id.homeFragment)
-        }
+
     }
 }

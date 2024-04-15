@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.vinicius.fistapp.R
-import com.vinicius.fistapp.databinding.FragmentCalculoBinding
 import com.vinicius.fistapp.databinding.FragmentHomeBinding
-import com.vinicius.fistapp.databinding.FragmentVerificaBinding
 
 class HomeFragment : Fragment() {
 
@@ -26,8 +24,8 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btnCalculo.setOnClickListener{
-            findNavController().navigate(R.id.calculoFragment2)
+        binding.btnCadastroPessoa.setOnClickListener{
+            findNavController().navigate(R.id.allPessoasFragment)
         }
 
         binding.btnVerifica.setOnClickListener{
