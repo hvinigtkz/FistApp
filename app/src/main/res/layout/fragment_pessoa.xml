@@ -8,15 +8,7 @@
     tools:context=".view.PessoaFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <TextView
-        android:id="@+id/tvNome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Nome:"
-        android:textSize="24sp" />
+    
 
     <EditText
         android:id="@+id/edtNome"
@@ -28,14 +20,6 @@
         android:hint="Digite seu Nome"
         android:inputType="text" />
 
-    <TextView
-        android:id="@+id/tvidade"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Idade:"
-        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/edtidade"
@@ -58,13 +42,14 @@
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
         <RadioButton
             android:id="@+id/btnMasculino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="13dp"
-            android:text="Masculino" />
+            android:text="Masculino"/>
 
         <RadioButton
             android:id="@+id/btnFeminino"
@@ -76,26 +61,26 @@
     </RadioGroup>
 
 
-
-
-    <TextView
-        android:id="@+id/tvfaixa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Faixa Etária: "
-        android:textSize="24sp" />
-
-
     <Button
         android:id="@+id/btnenviar2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#673AB7"
         android:text="Enviar" />
+
+    <Button
+        android:id="@+id/btnDeletar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:text="Deletar"
+        android:visibility="invisible"/>
 
 
 </LinearLayout>

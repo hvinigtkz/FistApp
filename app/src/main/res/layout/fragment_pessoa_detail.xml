@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.PessoaDetailFragment">
+
+
+    <TextView
+        android:id="@+id/lblNomeDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvNomeDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="100dp"
+        android:text="Vinicius Henrique"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblNomeDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lblIdadeDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Idade:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblNomeDetail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvIdadeDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="16"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblIdadeDetail"
+        app:layout_constraintStart_toEndOf="@+id/lblIdadeDetail"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeDetail"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/lblSexoDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Sexo:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblIdadeDetail"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:id="@+id/lblFaixaDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Faixa Etária:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblSexoDetail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvFaixaDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Adulto"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblFaixaDetail"
+        app:layout_constraintStart_toEndOf="@+id/lblFaixaDetail"
+        app:layout_constraintTop_toTopOf="@+id/lblFaixaDetail"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgFemininaDetail"
+        android:layout_marginStart="20dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/famele"
+        app:layout_constraintBottom_toBottomOf="@+id/lblSexoDetail"
+        app:layout_constraintStart_toEndOf="@+id/lblSexoDetail"
+        app:layout_constraintTop_toTopOf="@+id/lblSexoDetail" />
+
+    <ImageView
+        android:id="@+id/imgMasculinoDetail"
+        android:layout_marginStart="50dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/homem"
+        app:layout_constraintBottom_toBottomOf="@+id/lblSexoDetail"
+        app:layout_constraintStart_toEndOf="@+id/lblSexoDetail"
+        app:layout_constraintTop_toTopOf="@+id/lblSexoDetail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
